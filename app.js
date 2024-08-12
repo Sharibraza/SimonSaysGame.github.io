@@ -56,9 +56,23 @@ function checkAns(idx){
     }else{
         h2.innerHTML= ` Game over..!  Your score was : <b> ${level} </b> <br>Press any key to start. `;
        
-        reset();        
+        reset();  
+        
+         // Create an image element
+    let gameOverImage = document.createElement("img");
+    
+    // Set the source of the image
+    gameOverImage.src = "path/to/your/image.jpg"; // Replace with the actual path to your image
+    
+    // Optionally set other attributes like alt, width, height, etc.
+    gameOverImage.alt = "Game Over";
+    gameOverImage.width = "100vh"; // Set the desired width
+    gameOverImage.height = "100%"; // Set the desired height
+
+    // Append the image to the body
+    document.body.appendChild(gameOverImage);
        
-        document.querySelector("body").style.backgroundColor="red";
+        // document.querySelector("body").style.backgroundColor="red";
         setTimeout( function(){
           document.querySelector("body").style.backgroundColor="white";
         },150);      
