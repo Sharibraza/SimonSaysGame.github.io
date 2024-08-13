@@ -1,91 +1,96 @@
-
-
-*{ 
-    margin: 0;
-    text-align: center;
-    
+/* Reset and General Styles */
+* {
+  margin: 0;
+  text-align: center;
 }
 
-/* General */
-
-main{
-  height:100vh;
+/* Main Layout */
+main {
+  height: 100vh;
   margin: auto;
   background-color: black;
-
 }
-.btn-container{
-    height: 350px;
-    width: 400px;
-    display:flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin:auto;
-    
+
+/* Button Container */
+.btn-container {
+  height: 350px;
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: auto;
 }
-.btn{
-    height: 120px;
-    width: 120px;
-    border:5px solid;       
-    border-radius: 20%;
-    margin:20px;
-    cursor: pointer;
-  }
 
-  b{
-    color:red;
-    font-size: 30px;
-    font-weight: 900;
-  }
-  #head,#highscore{
-    color: white;
-  }
-  h1{
-    font-size: 40px;
-    line-height: 100px;
-    padding-top: 40px;
-  }
-  
- 
-  /* Button-color */
+/* Button Styling */
+.btn {
+  height: 120px;
+  width: 120px;
+  border: 5px solid;
+  border-radius: 20%;
+  margin: 20px;
+  cursor: pointer;
+}
 
-  .green{
-    background-color:rgb(37, 216, 37);
-  }
-  .red{
-    background-color:rgb(246, 16, 16);
-  }
-  .yellow{
-    background-color:rgb(181, 132, 25);
-  }
-  .blue{
-    background-color:rgb(59, 59, 239);
-  }
+/* Highlighting Text */
+b {
+  color: red;
+  font-size: 30px;
+  font-weight: 900;
+}
 
-  /* chnaging-colors-after-clicking buttons */
+/* Header and Highscore Styling */
+#head,
+#highscore {
+  color: white;
+}
 
-  .flash{
-    background-color:white;
-  }
-  .userflash{
-    background-color:white;
-  }
-  
-/* Button-glow-effect */
+/* Header Styling */
+h1 {
+  font-size: 40px;
+  line-height: 100px;
+  padding-top: 40px;
+}
 
-.green:active{
+/* Button Colors */
+.green {
+  background-color: rgb(37, 216, 37);
+}
+
+.red {
+  background-color: rgb(246, 16, 16);
+}
+
+.yellow {
+  background-color: rgb(181, 132, 25);
+}
+
+.blue {
+  background-color: rgb(59, 59, 239);
+}
+
+/* Button Flash Effect */
+.flash,
+.userflash {
+  background-color: white;
+}
+
+/* Button Glow Effect on Active */
+.green:active {
   border: 2px solid white;
   box-shadow: 0 0 20px 20px rgba(132, 242, 132, 0.5);
 }
-.red:active{
+
+.red:active {
   border: 2px solid white;
   box-shadow: 0 0 20px 20px rgba(242, 132, 141, 0.5);
 }
-.yellow:active{
+
+.yellow:active {
   border: 2px solid white;
   box-shadow: 0 0 20px 20px rgba(242, 240, 132, 0.5);
 }
-.blue:active{
+
+.blue:active {
   border: 2px solid white;
   box-shadow: 0 0 20px 20px rgba(132, 209, 242, 0.5);
 }
