@@ -60,7 +60,7 @@ function checkAns(idx) {
 
         reset();
 
-        document.querySelector("main").style.backgroundColor = "green";
+        document.querySelector("main").style.backgroundColor = "red";
         setTimeout(() => {
             document.querySelector("main").style.backgroundColor = "black";
         }, 150);   
